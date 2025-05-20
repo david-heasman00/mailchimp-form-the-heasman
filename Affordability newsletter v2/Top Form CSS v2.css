@@ -1,0 +1,117 @@
+#The-Heasman-Mailchimp-Form {
+  font-family: 'Source Sans 3';
+  text-align:center;
+  background: #FFF;
+  padding:20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mailchimp-form-header-container {
+  display: flex;
+  align-items: center; /* Vertically centers icon and text */
+  justify-content: center; /* Centers both items horizontally */
+  gap: 45px; /* Space between icon and text */
+  margin-bottom: 20px; /* Space below the header section */
+}
+
+.mailchimp-form-icon img {
+  width: 75px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.mailchimp-form-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.mailchimp-form-header {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+.mailchimp-form-subhead {
+  font-size: 1.3em;
+  margin-top: -25px;
+  margin-bottom: 10px;
+}
+
+.mailchimp-form-email-input input[type="email"] {
+    width: 100%; /* Takes up the full width of its container */
+    max-width: 600px; /* Sets a maximum width for larger screens */
+    padding: 10px; /* Adds some padding for better usability */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin-bottom: 15px;
+}
+
+.mailchimp-form-sign-up input[type="submit"] {
+  width: 100%;
+  max-width: 600px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* =======================================================================
+   Mobile & polish tweaks – added 2025‑05‑20
+   ----------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  /* Stack icon above headline and tighten spacing */
+  .mailchimp-form-header-container{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Slightly smaller icon for small screens */
+  .mailchimp-form-icon img{
+    width: 60px;
+  }
+
+  /* Fluid, centred headline and sub‑headline */
+  .mailchimp-form-header{
+    font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+    line-height: 1.25;
+    text-align: center;
+  }
+  .mailchimp-form-subhead{
+    font-size: clamp(1rem, 3.8vw, 1.3rem);
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+
+  /* Extra breathing room & softer shadow for the card */
+  #The-Heasman-Mailchimp-Form{
+    padding: 24px 18px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  }
+
+  /* Thumb‑friendly input & button, with side gutters */
+  .mailchimp-form-email-input input[type="email"],
+  .mailchimp-form-sign-up input[type="submit"]{
+    max-width: 90%;
+    padding: 12px 10px;
+    font-size: 1.05rem;
+  }
+  .mailchimp-form-sign-up input[type="submit"]{
+    margin-top: 12px;
+  }
+}
+
+/* Anchor offset for pages with sticky nav bars */
+#The-Heasman-Mailchimp-Form{
+  scroll-margin-top: 80px;
+}
+
+/* Subtle hover feedback on the CTA button */
+.mailchimp-form-sign-up input[type="submit"]:hover{
+  filter: brightness(1.08);
+  transition: 0.2s;
+}
+
+/* =======================================================================
+   End mobile & polish tweaks
+   ======================================================================= */
