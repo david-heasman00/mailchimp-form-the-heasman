@@ -1,0 +1,56 @@
+#The-Heasman-Mailchimp-Form {
+  font-family: 'Source Sans 3';
+  text-align:center;
+  background: #FFF;
+  padding:20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mailchimp-form-header-container {
+  display: flex;
+  align-items: center; /* Vertically centers icon and text */
+  justify-content: center; /* Centers both items horizontally */
+  gap: 50px; /* Space between icon and text */
+  margin-bottom: 20px; /* Space below the header section */
+}
+
+.mailchimp-form-icon img {
+  width: 75px; /* Adjust the size as needed */
+  height: auto;
+  margin-left: 60px;
+}
+
+.mailchimp-form-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.mailchimp-form-header {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+.mailchimp-form-subhead {
+  font-size: 1.3em;
+  margin-top: -25px;
+  margin-bottom: 10px;
+}
+
+.mailchimp-form-email-input input[type="email"] {
+    width: 100%; /* Takes up the full width of its container */
+    max-width: 600px; /* Sets a maximum width for larger screens */
+    padding: 10px; /* Adds some padding for better usability */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin-bottom: 15px;
+}
+
+.mailchimp-form-sign-up input[type="submit"] {
+  width: 100%;
+  max-width: 600px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
